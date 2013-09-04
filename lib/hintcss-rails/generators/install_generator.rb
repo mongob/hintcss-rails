@@ -22,7 +22,7 @@ module Hintcss
       private
       def copy_stylesheet(type)
         if type == 'src'
-          copy_file "#{stylesheets_type}.css", "app/assets/stylesheets/hintcss.css"
+          copy_file "#{stylesheets_type}.css.scss", "app/assets/stylesheets/hintcss.css.scss"
         else
           raise "You must have supplied a wrong command:("
         end
