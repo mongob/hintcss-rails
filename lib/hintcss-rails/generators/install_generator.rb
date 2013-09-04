@@ -4,11 +4,11 @@ module Hintcss
   module Generators
     class InstallGenerator < ::Rails::Generators::Base
       source_root File.expand_path("../includes/", __FILE__)
-      argument :src  => 'src'
+      argument :stylesheets_type, :type => :string, :default => 'src'
 
 
       def add_hintcss
-        copy_stylesheet(src)
+        copy_stylesheet(stylesheets_type)
 
         css_manifest = 'app/assets/stylesheets/application.css'
         if File.exist?(css_manifest)
@@ -20,8 +20,8 @@ module Hintcss
       end
 
       private
-      def copy_stylesheet(css_src)
-        if css_src == 'src'
+      def copy_stylesheet(type)
+        if type == 'src'
           copy_file "#{src}.css", "app/assets/stylesheets/hintcss.css"
         else
           raise "You must have supplied a wrong command:("
