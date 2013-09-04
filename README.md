@@ -1,4 +1,4 @@
-# Hintcss Rails
+# Hintcss-Rails
 
 A tooltip library in CSS for your lovely websites
 
@@ -9,6 +9,8 @@ Demo: http://kushagragour.in/lab/hint
 The hintcss-rails project integrates Hint CSS v1.3.0 tooltip with the Rails' Asset Pipeline
 
 **Current hintcss version = this gem's version
+
+[![Build Status](https://travis-ci.org/wilkinn/hintcss-rails.png?branch=master)](https://travis-ci.org/wilkinn/hintcss-rails)
 
 # Installation
 
@@ -27,7 +29,7 @@ Then run `bundle install` to install the gem.
 
 ```bash
 $ rails g hintcss:install
-
+```
 
 
 ## Contributing
