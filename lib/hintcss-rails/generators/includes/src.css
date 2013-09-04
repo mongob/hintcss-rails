@@ -1,11 +1,8 @@
-/*
-=require hintcss/hint-variables
-=require hintcss/hint-mixins
-=require hintcss/hint-core
-=require hintcss/hint-position
-=require hintcss/hint-color-types
-=require hintcss/hint-always
-=require hintcss/hint-rounded
-=require hintcss/hint-effects
-=require hintcss/hint
-*/
+@import "hintcss/hint-variables";
+@import "hintcss/hint-mixins";
+@import "hintcss/hint-core";
+@import "hintcss/hint-position";
+@import "hintcss/hint-color-types";
+@import "hintcss/hint-always";
+@import "hintcss/hint-rounded";
+@import "hintcss/hint-effects";
